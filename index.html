@@ -14,23 +14,28 @@
     
 
     <header>
-        <div class="container">
-           <div class="topmenu">
-            
-          
-
-           </div>
-        </div>
+        
         <div class="header main_head">
-            <div class="container">
+            <div class="cont">
                 <div class="header-menu ">
-                    <div class="logo">
+                    <a class="menuBar mx-3" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
+                        <img src="image/menu.png" alt="image">
+                     </a>
+                    <div class="logo ">
                         <a href="index.html">
-                          <img src="image/logo.PNG" alt="logo">
+                          <img src="image/LogoWhite.png" alt="logo">
                         </a>
                        
                     </div>
-                
+                    <div class="dropdown menuBar">
+                        <a class="dropdown-toggle" id="dLabel"  data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="image/am.jpg" alt="am">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <a class="dropdown-item" href="#"><img src="image/en.svg" alt="en"></a>
+                            <a class="dropdown-item" href="#"><img src="image/rus.jpg" alt="ru"></a>
+                        </ul>
+                      </div>
                    
                  
     
@@ -68,24 +73,11 @@
                               
                         
                         </ul>
-                        <div class="d-flex align-items-center">
-                        <a class="menuBar mx-3" data-bs-toggle="offcanvas" href="#mobilemenu" role="button" aria-controls="offcanvasExample">
-                           <img src="image/menubl.png" alt="image">
-                        </a>
-                        <div class="dropdown menuBar">
-                            <a class="dropdown-toggle" id="dLabel"  data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="image/am.jpg" alt="am">
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <a class="dropdown-item" href="#"><img src="image/en.svg" alt="en"></a>
-                                <a class="dropdown-item" href="#"><img src="image/rus.jpg" alt="ru"></a>
-                            </ul>
-                          </div>
-                        </div>
+                       
                         </div>
                    
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header">
                         
                           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -134,13 +126,13 @@
                
                 <div class="bannerSlide cont">
                     <div class="playpause">
-                        <img id='btnPause' src="image/play.png" alt="play">
+                        <img id='btnPause' src="image/pause.png" alt="play">
                        
                        
                       </div>
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button  type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
                           </div>
@@ -272,7 +264,9 @@
         <div class="iframe">
     
        
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.279853859537!2d44.503916376901834!3d40.180585006958665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcfc24d22059%3A0x678e79781e3e6610!2s10%20Amiryan%20St%2C%20Yerevan!5e0!3m2!1sen!2sam!4v1727801765642!5m2!1sen!2sam"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d381.0370097341278!2d44.5090624!3d40.1802239!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd4f99afb32b%3A0xa68d9f67f5f62b95!2sAmiryanVet!5e0!3m2!1sen!2sam!4v1728049116441!5m2!1sen!2sam" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
 </div>
 </div>
 </section>
@@ -286,12 +280,12 @@
                 <div class="svg_block ">
                     <div class="footer_content">
                         <img src="image/pin.svg" alt="img">
-                        <a href="https://maps.app.goo.gl/3XqBdbdHajtpjWcy7">Armenia. 0010. Yerevan. Amiryan Str., 10</a>
+                        <a target="_blank" href="https://maps.app.goo.gl/vX9CHXpKKtaxocUL7">Armenia. 0010. Yerevan. Amiryan Str., 10</a>
                     </div>
                 </div>
                 <div class="svg_block ">
                     <div class="footer_content">
-                        <img src="image/internet.png" alt="img">
+                        <img src="image/web.svg" alt="img">
                         <a href="http://www.amiryanvet.am/"> www.amiryanvet.am</a>
                     </div>
                 </div>
@@ -302,18 +296,25 @@
                         <a href="mailto:info@AmiryanVet.am"> Email: info@AmiryanVet.am </a>
                     </div>
                 </div>
-                <div class="svg_block ">
+                <div class="svg_block">
                     <div class="footer_content">
-                        <img src="image/time.png" alt="img">
-                        <p>Երկուշաբթի - Կիրակի 09:00-20:00
-                        </p>
+                        <img src="image/mobile.svg" alt="img">
+                        <a href="tel:371-256-0119">Tel: (+371 2) 56 01 19;</a>
                     </div>
                 </div>
+                <div class="svg_block">
+                    <div class="footer_content">
+                        <img  src="image/mobile.svg" alt="img">
+                        <a href="tel:374-965-60119">Tel: (+374 96) 56 01 19;</a>
+                    </div>
                 </div>
-                <div class="foot_items "> 
+             
+                </div>
+                <div class="foot_items  "> 
+                    
                     <div class="logo">
                         <a href="index.html">
-                          <img src="image/logo.PNG" alt="logo">
+                          <img src="image/LogoWhite.png" alt="logo">
                         </a>
                        
                     </div>
@@ -328,33 +329,29 @@
                     </div>
                 </div>
                 <div class="foot_items">
+                    <div class="svg_block ">
+                        <div class="footer_content">
+                            <img src="image/time.svg" alt="img">
+                            <p>Երկուշաբթի - Կիրակի 09:00-20:00
+                            </p>
+                        </div>
+                    </div>
                 <div class="svg_block">
                     <div class="footer_content">
-                        <img src="image/mobile.svg" alt="img">
+                        <img src="image/Vector.svg" alt="img">
                         <a href="tel:374-105-60119">Tel: (+374 10) 56 01 19;</a>
                     </div>
                 </div>
                 <div class="svg_block">
                     <div class="footer_content">
-                        <img src="image/telephone.png" alt="img">
+                        <img src="image/mobile.svg" alt="img">
                         <a href="tel:374-915-60119">Tel: (+374 91) 56 01 19;</a>
                     </div>
                 </div>
+                
                 <div class="svg_block">
                     <div class="footer_content">
-                        <img src="image/telephone.png" alt="img">
-                        <a href="tel:371-256-0119">Tel: (+371 2) 56 01 19;</a>
-                    </div>
-                </div>
-                <div class="svg_block">
-                    <div class="footer_content">
-                        <img  src="image/telephone.png" alt="img">
-                        <a href="tel:374-965-60119">Tel: (+374 96) 56 01 19;</a>
-                    </div>
-                </div>
-                <div class="svg_block">
-                    <div class="footer_content">
-                        <img src="image/telephone.png" alt="img">
+                        <img src="image/mobile.svg" alt="img">
                         <a href="tel:374-985-60119">Tel: (+374 98) 56 01 19;</a>
                     </div>
                 </div>
@@ -395,18 +392,27 @@ var carouselElement = document.getElementById("carouselExampleFade");
   var carousel = new bootstrap.Carousel(carouselElement, {
   	interval: 3000
   });
+  let indicator= document.querySelector('.carousel-indicators')
+  let next = document.querySelector('.carousel-control-next')
+  let prev = document.querySelector('.carousel-control-prev')
 let playpause = document.getElementById("btnPause")
 playpause.addEventListener("click", function () {
     if(playpause.getAttribute("src") === "image/pause.png"){
        
-        carousel.cycle()
+        carousel.pause();
         playpause.setAttribute("src", "image/play.png")
+        indicator.style.pointerEvents='none'
+        next.style.pointerEvents='none'
+         prev.style.pointerEvents='none'
  
     }
    else if(playpause.getAttribute("src") ==="image/play.png"){
-        
-        carousel.pause();
+    
+    carousel.cycle()
        playpause.setAttribute("src", "image/pause.png")
+        indicator.style.pointerEvents='unset'
+        next.style.pointerEvents='unset'
+         prev.style.pointerEvents='unset'
       
     }
   
