@@ -476,6 +476,22 @@ html {
   box-shadow: 20px 20px 15px rgba(255, 255, 255, 0.8),
     -20px -20px 15px rgba(255, 255, 255, 0.8);
 }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.about_img img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+}
+.about_text {
+  padding: 15px;
+}
 @media (min-width: 992px) {
   .dropdown-menu {
     min-width: unset;
@@ -633,6 +649,7 @@ html {
   }
   .footer::after {
     content: "";
+    bottom: 55px;
   }
 
   .divider::after {
@@ -682,9 +699,9 @@ html {
     width: 25px !important;
   }
   .forhoverone {
-    right: -50px;
-
-    top: -70px;
+    right: unset;
+    left: 110px;
+    top: -120px;
   }
   .forhovertwo {
     right: 160px;
@@ -692,7 +709,15 @@ html {
   }
   .footer::before {
     content: "";
-    left: 10%;
+    left: 3%;
+  }
+  .face {
+    margin-top: 10px !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+  .about {
+    flex-direction: column;
   }
 }
 
