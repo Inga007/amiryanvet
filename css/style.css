@@ -189,9 +189,9 @@ html {
   position: absolute;
   bottom: 25px;
   right: 35%;
-  background-image: url(../image/bone.svg);
-  width: 35px;
-  height: 35px;
+  background-image: url(../image/pet.png);
+  width: 30px;
+  height: 28px;
   opacity: 0.7;
   background-size: cover;
   z-index: 10;
@@ -199,7 +199,7 @@ html {
 .footer::before {
   content: "";
   position: absolute;
-  bottom: 75px;
+  bottom: 140px;
   left: 20%;
   background-image: url(../image/pet.png);
   width: 30px;
@@ -218,7 +218,7 @@ html {
 .footer::after {
   content: "";
   position: absolute;
-  bottom: 60px;
+  bottom: 35px;
   left: 24%;
   background-image: url(../image/pet.png);
   width: 30px;
@@ -232,7 +232,7 @@ html {
   position: absolute;
   bottom: -30px;
   right: 12%;
-  background-image: url(../image/pet2.svg);
+  background-image: url(../image/pet.png);
   width: 30px;
   height: 28px;
   opacity: 0.7;
@@ -270,6 +270,9 @@ html {
 .forhovertwo:hover {
   opacity: 1;
 }
+.footerright a {
+  text-align: right;
+}
 .svg_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,6 +298,11 @@ html {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+.footcont {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .svg_block img {
   width: 24px;
@@ -625,16 +633,15 @@ html {
   }
   .footer::after {
     content: "";
-    display: none;
   }
 
   .divider::after {
     content: "";
-    display: none;
+    right: 5%;
+    bottom: 230px;
   }
   .divider::before {
     content: "";
-    display: none;
   }
   .forhoverone {
     right: 0px;
@@ -677,10 +684,11 @@ html {
   .forhoverone {
     right: -50px;
 
-    top: 10px;
+    top: -70px;
   }
   .forhovertwo {
-    right: 150px;
+    right: 160px;
+    top: -120px;
   }
   .footer::before {
     content: "";
