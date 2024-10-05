@@ -136,7 +136,7 @@ html {
   width: 100%;
   height: 75vh;
 }
-.banner {
+.bannerSlide {
   position: relative;
 }
 .playpause {
@@ -184,29 +184,91 @@ html {
   background: #66a7c5;
   padding: 30px 0 0;
 }
-.footer::after {
+.divider::after {
   content: "";
   position: absolute;
-  top: 145px;
+  bottom: 25px;
   right: 35%;
   background-image: url(../image/bone.svg);
   width: 35px;
   height: 35px;
-  opacity: 0.8;
+  opacity: 0.7;
   background-size: cover;
   z-index: 10;
 }
 .footer::before {
   content: "";
   position: absolute;
-  bottom: 70px;
+  bottom: 75px;
   left: 20%;
   background-image: url(../image/pet.png);
   width: 30px;
   height: 28px;
-  opacity: 0.8;
+  opacity: 0.7;
   background-size: cover;
   z-index: 10;
+}
+.footer:hover::before {
+  opacity: 1;
+}
+.footer:hover::after {
+  opacity: 1;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  left: 24%;
+  background-image: url(../image/pet.png);
+  width: 30px;
+  height: 25px;
+  opacity: 0.7;
+  background-size: cover;
+  z-index: 10;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 12%;
+  background-image: url(../image/pet2.svg);
+  width: 30px;
+  height: 28px;
+  opacity: 0.7;
+  background-size: cover;
+  z-index: 10;
+}
+.divider:hover::before {
+  opacity: 1;
+}
+.divider:hover::after {
+  opacity: 1;
+}
+.addsvg {
+  position: relative;
+}
+.forhover {
+  position: absolute;
+  width: 35px !important;
+}
+.forhovertwo {
+  position: absolute !important;
+  top: 30px;
+  right: 200px;
+  opacity: 0.7;
+}
+.forhoverone {
+  position: absolute !important;
+  right: -70px;
+  opacity: 0.7;
+  top: -10px;
+}
+.forhoverone:hover {
+  opacity: 1;
+}
+.forhovertwo:hover {
+  opacity: 1;
 }
 .svg_block {
   display: -webkit-box;
@@ -309,30 +371,6 @@ html {
   height: 1px;
   background: #fff;
 }
-.divider::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 22%;
-  background-image: url(../image/pet.png);
-  width: 30px;
-  height: 25px;
-  opacity: 0.8;
-  background-size: cover;
-  z-index: 10;
-}
-.divider::before {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  right: 12%;
-  background-image: url(../image/pet2.svg);
-  width: 30px;
-  height: 28px;
-  opacity: 0.8;
-  background-size: cover;
-  z-index: 10;
-}
 
 .copy_r {
   display: -webkit-box;
@@ -348,7 +386,7 @@ html {
 }
 .copyright {
   text-align: center;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   color: #fff;
 }
@@ -358,9 +396,8 @@ html {
 }
 .copyright a {
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
-  text-decoration: none;
 }
 .iframe {
   display: flex;
@@ -590,10 +627,6 @@ html {
     content: "";
     display: none;
   }
-  .footer::before {
-    content: "";
-    display: none;
-  }
 
   .divider::after {
     content: "";
@@ -602,6 +635,16 @@ html {
   .divider::before {
     content: "";
     display: none;
+  }
+  .forhoverone {
+    right: 0px;
+
+    top: -30px;
+  }
+  .btn-close {
+    background-image: url("../image/close.svg");
+    width: 2rem;
+    height: 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -627,6 +670,21 @@ html {
   }
   .serviceImg img {
     height: 260px;
+  }
+  .forhover {
+    width: 25px !important;
+  }
+  .forhoverone {
+    right: -50px;
+
+    top: 10px;
+  }
+  .forhovertwo {
+    right: 150px;
+  }
+  .footer::before {
+    content: "";
+    left: 10%;
   }
 }
 
