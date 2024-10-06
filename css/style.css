@@ -360,7 +360,7 @@ html {
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 10px;
-  font-family: armfont;
+  font-family: fontmedium;
 }
 .headings h2::after,
 .headings h1::after {
@@ -492,6 +492,62 @@ html {
 .about_text {
   padding: 15px;
 }
+.about_text p {
+  font-family: regular;
+}
+.aboutdetail {
+  background-color: #66a7c5;
+  padding: 80px 0px 100px;
+  position: relative;
+}
+.aboutBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.aboutBox img {
+  max-width: 450px;
+  height: 300px;
+  width: 100%;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.whitevertical {
+  width: 1px;
+  height: 300px;
+  background: #fcf7f7;
+  position: relative;
+}
+
+.whitevertical::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #66a7c5;
+  border-radius: 50%;
+  border: 1px solid #fcf7f7;
+  position: absolute;
+  top: -19px;
+  left: -9px;
+}
+.aboutText {
+  width: 60%;
+  font-family: regular;
+  color: #fff;
+  text-align: left;
+  padding: 10px 10px 10px;
+}
+.aboutText h3 {
+  font-size: 30px;
+}
+.whiteline {
+  width: 100%;
+  height: 1px;
+  background: #f1eeee;
+}
 @media (min-width: 992px) {
   .dropdown-menu {
     min-width: unset;
@@ -571,6 +627,7 @@ html {
     font-size: 13px;
   }
 }
+
 @media (max-width: 992px) {
   .container {
     padding-right: 15px;
@@ -670,6 +727,10 @@ html {
     width: 2rem;
     height: 2rem;
   }
+  .aboutBox img {
+    max-width: 400px;
+    height: 280px;
+  }
 }
 @media (max-width: 768px) {
   .footer-content {
@@ -718,6 +779,19 @@ html {
   }
   .about {
     flex-direction: column;
+  }
+  .aboutBox {
+    flex-direction: column;
+  }
+  .aboutText {
+    width: 100%;
+  }
+  .aboutText h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .whitevertical {
+    display: none;
   }
 }
 
