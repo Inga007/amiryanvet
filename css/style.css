@@ -187,8 +187,8 @@ html {
 .divider::after {
   content: "";
   position: absolute;
-  bottom: 25px;
-  right: 35%;
+  bottom: 5px;
+  right: 5%;
   background-image: url(../image/cat.png);
   width: 40px;
   height: 35px;
@@ -200,7 +200,7 @@ html {
   content: "";
   position: absolute;
   top: 20px;
-  left: 24%;
+  left: 30%;
   background-image: url(../image/dog.png);
   width: 40px;
   height: 35px;
@@ -260,7 +260,7 @@ html {
 }
 .forhoverone {
   position: absolute !important;
-  right: -70px;
+  right: -100px;
   opacity: 1;
   top: -10px;
 }
@@ -272,6 +272,12 @@ html {
 }
 .footerright a {
   text-align: right;
+}
+.colored {
+  /* background: rgba(255, 255, 255, 0.4); */
+  /* padding: 3px;
+  border-radius: 12px; */
+  margin-right: 5px;
 }
 .svg_block {
   display: -webkit-box;
@@ -298,11 +304,18 @@ html {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  align-items: center;
 }
-.footcont {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+.middleblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lastfooter {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  align-items: flex-end;
 }
 .svg_block img {
   width: 24px;
@@ -722,14 +735,14 @@ html {
   .divider::after {
     content: "";
     right: 5%;
-    bottom: 245px;
+    bottom: 25px;
   }
 
-  .forhoverone {
+  /* .forhoverone {
     right: 0px;
 
     top: -30px;
-  }
+  } */
   .btn-close {
     background-image: url("../image/close.svg");
     width: 2rem;
@@ -745,8 +758,12 @@ html {
   .whitevertical {
     height: 300px;
   }
+  .colored img {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .footer-content {
     flex-direction: column;
     justify-content: center;
@@ -760,7 +777,12 @@ html {
     justify-content: center;
     align-items: center;
   }
-
+  .footer::before {
+    content: "";
+    left: 10%;
+  }
+}
+@media (max-width: 768px) {
   .carousel-item img {
     height: 350px;
   }
@@ -775,8 +797,8 @@ html {
   }
   .forhoverone {
     right: unset;
-    left: 110px;
-    top: -120px;
+    left: 150px;
+    top: -10px;
   }
   .forhovertwo {
     right: 160px;
