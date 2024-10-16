@@ -483,6 +483,11 @@ html {
   padding: 10px;
   background: rgba(0, 0, 0, 0.3);
 }
+.serviveBanner .carousel-caption b span:before {
+  content: " \203A";
+  margin-right: 8px;
+  font-size: 18px;
+}
 .forborder {
   width: 100%;
   border: 1px solid #f1eeee;
@@ -623,6 +628,9 @@ html {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
+.page-link {
+  color: #000;
+}
 .page-link:hover {
   z-index: 2;
   color: #fff;
@@ -653,7 +661,8 @@ html {
   margin: 10px 10px;
   border-radius: 10px;
   padding: 10px;
-
+  text-decoration: none;
+  color: #000;
   transition: all 0.5s;
 }
 .partner_content:hover {
@@ -670,6 +679,43 @@ html {
 .partner_text p {
   margin-top: 10px;
   height: 40px;
+  font-family: regular;
+}
+/* contact */
+.contactBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactBlock iframe {
+  width: 600px;
+  height: 450px;
+}
+.contactBlock form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+}
+.contactBlock form input,
+.contactBlock form textarea {
+  margin-top: 15px;
+  max-width: 400px;
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #8a8888;
+  border-radius: 12px;
+  font-family: regular;
+}
+.contactBlock .submit {
+  background: #66a7c5;
+  color: #fff;
+  border: 1px solid #66a7c5;
+  transition: all 0.5s;
+}
+.contactBlock .submit:hover {
+  background: #fff;
+  color: #66a7c5;
 }
 @media (min-width: 992px) {
   .dropdown-menu {
@@ -766,6 +812,10 @@ html {
   .partner_img img,
   .partner_img {
     height: 220px;
+  }
+  .contactBlock iframe {
+    width: 500px;
+    height: 350px;
   }
 }
 
@@ -910,6 +960,10 @@ html {
     -ms-flex: 0 1 30%;
     flex: 0 1 30%;
   }
+  .contactBlock {
+    margin-top: 80px;
+    flex-direction: column;
+  }
 }
 @media (max-width: 768px) {
   .carousel-item img {
@@ -1002,6 +1056,12 @@ html {
   .partner_img {
     height: 170px;
   }
+  .contactBlock .iframe {
+    max-width: 450px;
+    width: 100%;
+
+    height: 350px;
+  }
 }
 @media (max-width: 500px) {
   .service .servicebox {
@@ -1030,6 +1090,10 @@ html {
   }
   .serviceImg img {
     height: 180px;
+  }
+  .contactBlock {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 @media (max-width: 400px) {
