@@ -42,7 +42,7 @@
                         <div id="mySidenav" class="sidenav">
                             <ul class="sideul">
                                 <li><a href="index.html" >Գլխավոր</a></li>
-                                <li><a href="about.html" class="active">Մեր Մասին</a></li>
+                                <li><a href="about.html">Մեր Մասին</a></li>
                                 <li class="dropdown">
                                     <a  href="service.html">
                                         Ծառայություններ  </a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
@@ -54,12 +54,12 @@
                                 <li class="dropdown">
                                     <a  href="news.html">
                                         Նորություններ</a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
-                                      <ul class="dropdown-menu mydrop" aria-labelledby="bLabel">
+                                    <ul class="dropdown-menu mydrop" aria-labelledby="bLabel">
                                         <a class="dropdown-item" href="newsDetail.html">Նորություն</a>
                                         <a class="dropdown-item" href="newsDetail.html">Նորություններ</a>
                                     </ul>
                                 </li>
-                                <li><a href="job.html">Կարիերա</a></li>
+                                <li><a href="job.html" class="active">Կարիերա</a></li>
                                 <li><a href="partners.html">Գործընկերներ</a></li>
                                 <li><a href="contact.html">Հետադարձ կապ</a></li>
                               
@@ -91,8 +91,8 @@
                           <div class="dropdown mt-3">
                             <div class="mobileList">
                                 <ul>
-                                    <li><a href="index.html" >Գլխավոր</a></li>
-                                    <li><a href="about.html" >Մեր Մասին</a></li>
+                                    <li><a href="index.html" class="active">Գլխավոր</a></li>
+                                    <li><a href="about.html">Մեր Մասին</a></li>
                                     <li class="dropdown">
                                         <a  href="service.html">
                                             Ծառայություններ  </a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span> 
@@ -102,7 +102,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a  href="#">
+                                        <a  href="news.html">
                                             Նորություններ</a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
                                         <ul class="dropdown-menu mydrop" aria-labelledby="bLabel">
                                             <a class="dropdown-item" href="newsDetail.html">Նորություն</a>
@@ -125,138 +125,170 @@
         </div>
 
     </header>
+    <section>
+
+        <div class="banner ">
+           
+            <div class="serviveBanner cont">
+                <div class="playpause">
+                    <img id='btnPause' src="image/pause.png" alt="play">
+                   
+                   
+                  </div>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button  type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="image/banner4.jpg"  alt="image">
+                       
+                        <div class="carousel-caption d-none d-md-block ">
+                            
+                            <b>Home  <span>Job</span>  </b>
+                          </div>
+                      </div>
+                      <div class="carousel-item ">
+                        <img src="image/banner6.jpg"  alt="image">
+                        <div class="carousel-caption d-none d-md-block">
+                           
+                            <b>Home <span>Job</span>  </b>
+                          </div>
+                      </div>
+                      <div class="carousel-item ">
+                        <img src="image/banner3.jpg"  alt="image">
+                        <div class="carousel-caption d-none d-md-block">
+                            <b>Home  <span>Job</span>  </b>
+                          </div>
+                      </div>
+                      
+                     
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    
+</section>
 
     <section>
         <div class="container">
-            <div class="about">
+            <div class="about job">
 
                 <div class="about_img">
-                    <img src="image/service2.jpg" alt="image">
+                    <img src="image/service1.jpg" alt="image">
                 </div>
                 <div class="about_text ">
                  
                     <div class="headings" >
                         <h1 >Lorem, ipsum dolor.</h1>
                     </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quas est exercitationem velit enim labore dicta voluptate sint debitis aut.</p>
+                    <a href="career.html">կարդալ ավելին</a>
+                </div>
+            </div>
+
+            <div class="about job">
+
+                <div class="about_img">
+                    <img src="image/service4.jpg" alt="image">
+                </div>
+                <div class="about_text ">
+                 
+                    <div class="headings" >
+                        <h2 >Lorem, ipsum dolor.</h2>
+                    </div>
+                 
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quas est exercitationem velit enim labore dicta voluptate sint debitis aut.</p>
+                    <a href="career.html">կարդալ ավելին</a>
+                </div>
+            </div>
+            <div class="about job">
+
+                <div class="about_img">
+                    <img src="image/service5.jpg" alt="image">
+                </div>
+                <div class="about_text ">
+                 
+                    <div class="headings" >
+                        <h2 >Lorem, ipsum dolor.</h2>
+                    </div>
                   
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quas est exercitationem velit enim labore dicta voluptate sint debitis aut.</p>
+                    <a href="career.html">կարդալ ավելին</a>
                 </div>
             </div>
+            <div class="about job">
+
+                <div class="about_img">
+                    <img src="image/service3.jpg" alt="image">
+                </div>
+                <div class="about_text ">
+                 
+                    <div class="headings" >
+                        <h2 >Lorem, ipsum dolor.</h2>
+                    </div>
+                 
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quas est exercitationem velit enim labore dicta voluptate sint debitis aut.</p>
+                    <a href="career.html">կարդալ ավելին</a>
+                </div>
+            </div>
+            <div class="about job">
+
+                <div class="about_img">
+                    <img src="image/service3.jpg" alt="image">
+                </div>
+                <div class="about_text ">
+                 
+                    <div class="headings" >
+                        <h2 >Lorem, ipsum dolor.</h2>
+                    </div>
+                   
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quas est exercitationem velit enim labore dicta voluptate sint debitis aut.</p>
+                    <a href="career.html">կարդալ ավելին</a>
+                </div>
+            </div>
+
+
+
+
         </div>
 
 
 
+
     </section>
+
     <section>
-
-        <div class="aboutdetail">
-            
-            <div class="container">
-               <div class="aboutBox">
-                <div class="aboutImag">
-                <img src="image/service7.jpg" alt="image">
-            </div>
-                <div class="whitevertical">
-
-                </div>
-                
-                <div class="aboutText">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, soluta. Necessitatibus iure dignissimos omnis dolorum in, molestiae maxime veniam velit ab, nihil nobis obcaecati exercitationem!</p>
-                </div>
-               </div>
-            </div>
-            <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                    <img src="image/service6.jpg" alt="image">
-                </div>
-                    <div class="whitevertical">
-
-                    </div>
-                    <div class="aboutText">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ab eius excepturi in aut itaque modi ea, reiciendis dolorum rerum.</p>
-                    </div>
-                   </div>
-
-            </div>
-            <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                 <img src="image/service7.jpg" alt="image">
-                </div>
-                 <div class="whitevertical">
-
-                 </div>
-                 <div class="aboutText">
-                     <h3>Lorem, ipsum.</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, soluta. Necessitatibus iure dignissimos omnis dolorum in, molestiae maxime veniam velit ab, nihil nobis obcaecati exercitationem!</p>
-                 </div>
-                </div>
-             </div>
-             <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                    <img src="image/service6.jpg" alt="image">
-                </div>
-                    <div class="whitevertical">
-
-                    </div>
-                    <div class="aboutText">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ab eius excepturi in aut itaque modi ea, reiciendis dolorum rerum.</p>
-                    </div>
-                   </div>
-
-            </div>
-            <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                 <img src="image/service7.jpg" alt="image">
-                </div>
-                 <div class="whitevertical">
-
-                 </div>
-                 <div class="aboutText">
-                     <h3>Lorem, ipsum.</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, soluta. Necessitatibus iure dignissimos omnis dolorum in, molestiae maxime veniam velit ab, nihil nobis obcaecati exercitationem!</p>
-                 </div>
-                </div>
-             </div>
-             <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                    <img src="image/service6.jpg" alt="image">
-                </div>
-                    <div class="whitevertical">
-
-                    </div>
-                    <div class="aboutText">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ab eius excepturi in aut itaque modi ea, reiciendis dolorum rerum.</p>
-                    </div>
-                   </div>
-
-            </div>
-            <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                 <img src="image/service7.jpg" alt="image">
-                </div>
-                 <div class="whitevertical">
-
-                 </div>
-                 <div class="aboutText">
-                     <h3>Lorem, ipsum.</h3>
-                     <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minus, numquam recusandae vero in natus ea? Rem, quae! Repellendus, hic! sit amet consectetur, adipisicing elit. Molestiae, soluta. Necessitatibus iure dignissimos omnis dolorum in, molestiae maxime veniam velit ab, nihil nobis obcaecati exercitationem!</p>
-                 </div>
-                </div>
-             </div>
-             
+        <div class="container paginat">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
         </div>
     </section>
-    <div class="whiteline"></div>
     <footer>
         <div class="footer" id="contact">
             <div class="container">
@@ -292,8 +324,6 @@
                     </div>
                 
                   
-                   
-               
              
                 </div>
                 <div class="foot_items  middleblock"> 
@@ -349,7 +379,9 @@
                     </div> 
 
                   
-                   
+                 
+              
+              
                 </div>
                 </div>
                 <div class="divider"></div>
@@ -367,5 +399,44 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
+
+    js/script.js"></script>
+
+    <script>
+
+        var carouselElement = document.getElementById("carouselExampleFade");
+          var carousel = new bootstrap.Carousel(carouselElement, {
+              interval: 3000
+          });
+          let indicator= document.querySelector('.carousel-indicators')
+          let next = document.querySelector('.carousel-control-next')
+          let prev = document.querySelector('.carousel-control-prev')
+        let playpause = document.getElementById("btnPause")
+        playpause.addEventListener("click", function () {
+            if(playpause.getAttribute("src") === "image/pause.png"){
+               
+                carousel.pause();
+                playpause.setAttribute("src", "image/play.png")
+                indicator.style.pointerEvents='none'
+                next.style.pointerEvents='none'
+                 prev.style.pointerEvents='none'
+         
+            }
+           else if(playpause.getAttribute("src") ==="image/play.png"){
+            
+            carousel.cycle()
+               playpause.setAttribute("src", "image/pause.png")
+                indicator.style.pointerEvents='unset'
+                next.style.pointerEvents='unset'
+                 prev.style.pointerEvents='unset'
+              
+            }
+          
+         
+        })
+        
+        </script>
+
+    
 </body>
 </html>

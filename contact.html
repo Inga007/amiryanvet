@@ -42,7 +42,7 @@
                         <div id="mySidenav" class="sidenav">
                             <ul class="sideul">
                                 <li><a href="index.html" >Գլխավոր</a></li>
-                                <li><a href="about.html" class="active">Մեր Մասին</a></li>
+                                <li><a href="about.html">Մեր Մասին</a></li>
                                 <li class="dropdown">
                                     <a  href="service.html">
                                         Ծառայություններ  </a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
@@ -54,14 +54,14 @@
                                 <li class="dropdown">
                                     <a  href="news.html">
                                         Նորություններ</a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
-                                      <ul class="dropdown-menu mydrop" aria-labelledby="bLabel">
+                                    <ul class="dropdown-menu mydrop" aria-labelledby="bLabel">
                                         <a class="dropdown-item" href="newsDetail.html">Նորություն</a>
                                         <a class="dropdown-item" href="newsDetail.html">Նորություններ</a>
                                     </ul>
                                 </li>
                                 <li><a href="job.html">Կարիերա</a></li>
                                 <li><a href="partners.html">Գործընկերներ</a></li>
-                                <li><a href="contact.html">Հետադարձ կապ</a></li>
+                                <li><a href="contact.html" class="active">Հետադարձ կապ</a></li>
                               
                                 <li>
                                     <div class="dropdown">
@@ -91,8 +91,8 @@
                           <div class="dropdown mt-3">
                             <div class="mobileList">
                                 <ul>
-                                    <li><a href="index.html" >Գլխավոր</a></li>
-                                    <li><a href="about.html" >Մեր Մասին</a></li>
+                                    <li><a href="index.html" class="active">Գլխավոր</a></li>
+                                    <li><a href="about.html">Մեր Մասին</a></li>
                                     <li class="dropdown">
                                         <a  href="service.html">
                                             Ծառայություններ  </a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span> 
@@ -102,7 +102,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a  href="#">
+                                        <a  href="news.html">
                                             Նորություններ</a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
                                         <ul class="dropdown-menu mydrop" aria-labelledby="bLabel">
                                             <a class="dropdown-item" href="newsDetail.html">Նորություն</a>
@@ -125,138 +125,31 @@
         </div>
 
     </header>
-
     <section>
         <div class="container">
-            <div class="about">
+            <div class="contactBlock">
+                <form >
+                    <input type="text" placeholder="Անուն Ազգանուն" title="Only firstname and lastname" pattern="^([a-zA-Zա-ֆԱ-Ֆ]{2,})+\s+([a-zA-Zա-ֆԱ-Ֆ\-\s]{2,})+$" id="firstname" required>
+         
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel"  class="tel" maxlength="11" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 43' placeholder="Phone" required>
+                    <textarea name="" id="" placeholder="Message" required></textarea>
+                    <input class="submit" type="submit" value="Send">
 
-                <div class="about_img">
-                    <img src="image/service2.jpg" alt="image">
-                </div>
-                <div class="about_text ">
-                 
-                    <div class="headings" >
-                        <h1 >Lorem, ipsum dolor.</h1>
-                    </div>
-                  
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quas est exercitationem velit enim labore dicta voluptate sint debitis aut.</p>
-                </div>
+                </form>
+                <div class="iframe">
+    
+       
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d381.0370097341278!2d44.5090624!3d40.1802239!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd4f99afb32b%3A0xa68d9f67f5f62b95!2sAmiryanVet!5e0!3m2!1sen!2sam!4v1728049116441!5m2!1sen!2sam" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        
+        </div>
             </div>
         </div>
-
-
-
     </section>
-    <section>
 
-        <div class="aboutdetail">
-            
-            <div class="container">
-               <div class="aboutBox">
-                <div class="aboutImag">
-                <img src="image/service7.jpg" alt="image">
-            </div>
-                <div class="whitevertical">
 
-                </div>
-                
-                <div class="aboutText">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, soluta. Necessitatibus iure dignissimos omnis dolorum in, molestiae maxime veniam velit ab, nihil nobis obcaecati exercitationem!</p>
-                </div>
-               </div>
-            </div>
-            <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                    <img src="image/service6.jpg" alt="image">
-                </div>
-                    <div class="whitevertical">
 
-                    </div>
-                    <div class="aboutText">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ab eius excepturi in aut itaque modi ea, reiciendis dolorum rerum.</p>
-                    </div>
-                   </div>
-
-            </div>
-            <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                 <img src="image/service7.jpg" alt="image">
-                </div>
-                 <div class="whitevertical">
-
-                 </div>
-                 <div class="aboutText">
-                     <h3>Lorem, ipsum.</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, soluta. Necessitatibus iure dignissimos omnis dolorum in, molestiae maxime veniam velit ab, nihil nobis obcaecati exercitationem!</p>
-                 </div>
-                </div>
-             </div>
-             <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                    <img src="image/service6.jpg" alt="image">
-                </div>
-                    <div class="whitevertical">
-
-                    </div>
-                    <div class="aboutText">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ab eius excepturi in aut itaque modi ea, reiciendis dolorum rerum.</p>
-                    </div>
-                   </div>
-
-            </div>
-            <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                 <img src="image/service7.jpg" alt="image">
-                </div>
-                 <div class="whitevertical">
-
-                 </div>
-                 <div class="aboutText">
-                     <h3>Lorem, ipsum.</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, soluta. Necessitatibus iure dignissimos omnis dolorum in, molestiae maxime veniam velit ab, nihil nobis obcaecati exercitationem!</p>
-                 </div>
-                </div>
-             </div>
-             <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                    <img src="image/service6.jpg" alt="image">
-                </div>
-                    <div class="whitevertical">
-
-                    </div>
-                    <div class="aboutText">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ab eius excepturi in aut itaque modi ea, reiciendis dolorum rerum.</p>
-                    </div>
-                   </div>
-
-            </div>
-            <div class="container">
-                <div class="aboutBox">
-                    <div  class="aboutImag">
-                 <img src="image/service7.jpg" alt="image">
-                </div>
-                 <div class="whitevertical">
-
-                 </div>
-                 <div class="aboutText">
-                     <h3>Lorem, ipsum.</h3>
-                     <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minus, numquam recusandae vero in natus ea? Rem, quae! Repellendus, hic! sit amet consectetur, adipisicing elit. Molestiae, soluta. Necessitatibus iure dignissimos omnis dolorum in, molestiae maxime veniam velit ab, nihil nobis obcaecati exercitationem!</p>
-                 </div>
-                </div>
-             </div>
-             
-        </div>
-    </section>
-    <div class="whiteline"></div>
     <footer>
         <div class="footer" id="contact">
             <div class="container">
@@ -292,8 +185,6 @@
                     </div>
                 
                   
-                   
-               
              
                 </div>
                 <div class="foot_items  middleblock"> 
@@ -349,7 +240,9 @@
                     </div> 
 
                   
-                   
+                 
+              
+              
                 </div>
                 </div>
                 <div class="divider"></div>
@@ -367,5 +260,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
+   
+    
 </body>
 </html>
