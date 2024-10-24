@@ -12,7 +12,6 @@
 
 
     
-
     <header>
         
         <div class="header main_head">
@@ -42,7 +41,7 @@
                         <div id="mySidenav" class="sidenav">
                             <ul class="sideul">
                                 <li><a href="index.html" >Գլխավոր</a></li>
-                                <li><a href="about.html" >Մեր Մասին</a></li>
+                                <li><a href="about.html">Մեր Մասին</a></li>
                                 <li class="dropdown">
                                     <a  href="service.html">
                                         Ծառայություններ  </a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
@@ -51,15 +50,12 @@
                                         <a class="dropdown-item" href="serviceSingle.html">Ծառայություններ</a>
                                     </ul>
                                 </li>
-                                <li class="dropdown">
+                                <li >
                                     <a  href="news.html">
-                                        Նորություններ</a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
-                                      <ul class="dropdown-menu mydrop" aria-labelledby="bLabel">
-                                        <a class="dropdown-item" href="newsDetail.html">Նորություն</a>
-                                        <a class="dropdown-item" href="newsDetail.html">Նորություններ</a>
-                                    </ul>
+                                        Նորություններ</a> 
+                                   
                                 </li>
-                                <li><a href="job.html">Կարիերա</a></li>
+                                <li><a href="job.html"class="active">Կարիերա</a></li>
                                 <li><a href="partners.html">Գործընկերներ</a></li>
                                 <li><a href="contact.html">Հետադարձ կապ</a></li>
                               
@@ -70,6 +66,7 @@
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dLabel">
                                             <a class="dropdown-item" href="#"><img src="image/en.svg" alt="en"></a>
+                                            <a class="dropdown-item" href="#"><img src="image/rus.jpg" alt="ru"></a>
                                            
                                         </ul>
                                       </div>
@@ -91,8 +88,8 @@
                           <div class="dropdown mt-3">
                             <div class="mobileList">
                                 <ul>
-                                    <li><a href="index.html" >Գլխավոր</a></li>
-                                    <li><a href="about.html" >Մեր Մասին</a></li>
+                                    <li><a href="index.html" class="active">Գլխավոր</a></li>
+                                    <li><a href="about.html">Մեր Մասին</a></li>
                                     <li class="dropdown">
                                         <a  href="service.html">
                                             Ծառայություններ  </a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span> 
@@ -102,7 +99,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a  href="#">
+                                        <a  href="news.html">
                                             Նորություններ</a> <span class="dropdown-toggle" id="bLabel"  data-bs-toggle="dropdown" aria-expanded="false"></span>
                                         <ul class="dropdown-menu mydrop" aria-labelledby="bLabel">
                                             <a class="dropdown-item" href="newsDetail.html">Նորություն</a>
@@ -152,17 +149,24 @@
         <div class="container">
            <div class="career">
             <form >
-                <input type="text" placeholder="Անուն Ազգանուն" title="Only firstname and lastname" pattern="^([a-zA-Zա-ֆԱ-Ֆ]{2,})+\s+([a-zA-Zա-ֆԱ-Ֆ\-\s]{2,})+$" id="firstname" required>
+                <input type="text" placeholder="Անուն Ազգանուն*"
+                 title="Only firstname and lastname"
+                  pattern="^([a-zA-Zա-ֆԱ-ՖА-Яа-я\-\s]{2,})+\s+([a-zA-Zա-ֆԱ-ՖА-Яа-я\-\s]{2,})+$" 
+                  id="firstname" required>
                 <!-- <span  id="nameError" >
                     Մուտքագրեք անուն և ազգանուն
                   </span> -->
-                <input type="email" placeholder="Email" required>
-                <input type="tel" class="tel" maxlength="11" min="11" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 43' placeholder="Phone" required>
+                <input type="email" placeholder="Email*" required>
+                <input type="tel" class="tel" maxlength="11" min="11"
+                 onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 43' placeholder="Phone*" required>
+                 <input type="text" class="socInput" placeholder="Facebook" >
+                 <input type="text" class="socInput" placeholder="Linkedin" >
                  <div class="socialIcons">
-                    <a href="#">
+                    
+                    <!-- <a href="#">
                     <img src="image/facebookb.svg" alt="icon"></a>
                     <a href="#">
-                    <img src="image/linkedin.png" alt="icon"></a>
+                    <img src="image/linkedin.png" alt="icon"></a> -->
                     <div class="attach">
                     <img   src="image/attach.png" alt="icon">
                     <input type="file" >

@@ -583,7 +583,10 @@ html {
   padding: 15px 40px;
   max-width: 800px;
 }
-
+.news .linkA {
+  font-family: regular;
+  color: #fff;
+}
 .about_text p {
   font-family: regular;
 }
@@ -591,6 +594,7 @@ html {
   background-color: #66a7c5;
   padding: 80px 0px 100px;
   position: relative;
+  margin-top: 80px;
 }
 .aboutBox {
   display: flex;
@@ -688,8 +692,8 @@ html {
 }
 .partner_content {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 23.5%;
-  flex: 0 1 23.5%;
+  -ms-flex: 0 1 18.6%;
+  flex: 0 1 18.6%;
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px grey;
   box-shadow: 0 0 10px grey;
@@ -705,11 +709,11 @@ html {
 }
 .partner_img {
   width: 100%;
-  height: 250px;
+  height: 180px;
 }
 .partner_img img {
   width: 100%;
-  height: 250px;
+  height: 180px;
 }
 .partner_text p {
   margin-top: 10px;
@@ -782,6 +786,10 @@ html {
   border: 1px solid #66a7c5;
   transition: all 0.5s;
 }
+.career .submit:hover {
+  background: #fff;
+  color: #66a7c5;
+}
 .careerDiteil {
   margin-top: 80px;
 }
@@ -803,7 +811,7 @@ html {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 .socialIcons img {
@@ -826,16 +834,16 @@ html {
 }
 input[type="text"]:valid,
 input[type="email"]:valid,
-input[type="tel"]:valid  {
-  border: 1px solid rgba(30, 182, 30,0.4);
+input[type="tel"]:valid {
+  border: 1px solid rgba(30, 182, 30, 0.4);
 }
-
+.socInput:valid {
+  border: 1px solid #8a8888!important;
+}
 #nameError {
   display: none;
-  font-size: 0.8em; 
+  font-size: 0.8em;
 }
-
-
 
 input[type="text"].invalid {
   border-color: rgb(245, 145, 145);
@@ -896,8 +904,8 @@ input[type="text"].invalid {
   }
   .partner_content {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 23%;
-    flex: 0 1 23%;
+    -ms-flex: 0 1 18%;
+    flex: 0 1 18%;
   }
 }
 @media (max-width: 1400px) {
@@ -940,7 +948,7 @@ input[type="text"].invalid {
   }
   .partner_img img,
   .partner_img {
-    height: 220px;
+    height: 160px;
   }
   .contactBlock iframe {
     width: 500px;
@@ -1205,7 +1213,7 @@ input[type="text"].invalid {
   }
   .partner_img img,
   .partner_img {
-    height: 170px;
+    height: 150px;
   }
   .contactBlock .iframe {
     max-width: 450px;
@@ -1214,14 +1222,24 @@ input[type="text"].invalid {
     height: 350px;
   }
   .career {
-  margin-top: 50px;
-  margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-  .careerDiteil{
+  .careerDiteil {
     margin-top: 50px;
   }
-  .headings h2, .headings h1{
+  .headings h2,
+  .headings h1 {
     font-size: 25px;
+  }
+  .aboutImag {
+    padding-bottom: unset;
+  }
+  .news .aboutText {
+    margin-bottom: 15px;
+  }
+  .aboutdetail {
+    margin-top: 50px;
   }
 }
 @media (max-width: 500px) {
@@ -1235,7 +1253,7 @@ input[type="text"].invalid {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .job .about_text{
+  .job .about_text {
     padding: 15px;
   }
 }
